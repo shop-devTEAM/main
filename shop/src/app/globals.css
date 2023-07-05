@@ -1,3 +1,13 @@
 /* 
   글로벌 css
+  이 파일 외에 다른 css 파일 만들지 말아주세요 Styled Components만 사용합니다.
 */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;box-sizing:border-box;}
+img{border:none;vertical-align:top;} fieldset{border:none}; li{list-style: none;}input,select,button{vertical-align: middle;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style: normal;font-weight: normal;}
+
+/* 오래된 브라우저를 위한 HTML5 display-role 초기화*/
+ol, ul {list-style: none;}blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
