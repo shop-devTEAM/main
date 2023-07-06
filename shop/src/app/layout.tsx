@@ -1,7 +1,7 @@
 /* 
 헤더 풋터 등의 레이아웃을 작업하는 컴포넌트
 */
-"use client"
+//"use client"
 
 import "./globals.css"
 import Nav from "./components/Nav";
