@@ -47,6 +47,8 @@ const StyledNav = styled.nav`
     padding-right: 22px;
     
     ul{
+      margin: 0 auto;
+      max-width : 1024px;
       justify-content:space-between;
     }
     a{
