@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 function Nav() {
   const mainNavText: ({
-    id: number;
+  id: number;
     product: JSX.Element;
     submenu: never[];
 } | {
@@ -188,13 +188,15 @@ const StyledNav = styled.nav`
 
     @media only screen and (max-width: 1700px) {
       .content .row{ 
-        transform: translate(0);
-        position:relative;
-        left:0%;
+        left:70%;
       }
     }
 
     @media only screen and (max-width: 1024px) {
+      .content .row{ 
+        transform: translate(0);
+        left:0%;
+      }
     .content .column {
 	    width: 33%;
     }
