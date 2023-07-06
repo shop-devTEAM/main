@@ -8,6 +8,6 @@ img{border:none;vertical-align:top;width: 100%;} fieldset{border:none};input,sel
 address,caption,cite,code,dfn,em,strong,th,var{font-style: normal;font-weight: normal;} a{color:initial; text-decoration: none;}
 
 /* 오래된 브라우저를 위한 HTML5 display-role 초기화*/
-ol, ul, li {list-style: none; display: flex;}blockquote, q {quotes: none;}
+ol, ul{list-style: none; display: flex;}blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
