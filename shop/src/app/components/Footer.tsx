@@ -57,7 +57,8 @@ function Footer() {
           </ul>
         </section>
         <section className="footer_list">
-        <h4 className="footer_title">스토어 알아보기 <button onClick={onClickToggle3}>+</button></h4>
+        <h4 className="footer_title">스토어 알아보기 <button onClick={onClickToggle3}>+</button>
+        </h4>
           <ul className={isToggle3 ? '' : 'footer_ul'}>  
             {StoreNav.map((text, idx) => (
               <Link key={idx} href="/">
