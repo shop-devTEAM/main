@@ -289,7 +289,11 @@ function Nav() {
   ];
 
   //모바일 메뉴data
-  const mobileMenu = [
+  const mobileMenu: {
+    id: number;
+    name: string;
+    path: string;
+}[] = [
     {id : 1, name:"카테고리1", path:"/"},
     {id : 2, name:"카테고리2", path:"/"},
     {id : 3, name:"카테고리3", path:"/"},
@@ -327,7 +331,7 @@ function Nav() {
 </ul>
 { 
   toggle && <StyledmobileMenu>
-      <Link href="/" onClick={()=>{menuToggle()}} className="closemenu">X</Link>
+      <Link href="/" onClick={()=>{menuToggle()}} className="closemenu"> X </Link>
       <ul className="movcontainer">
         {
           mobileMenu.map(item => <li key={item.id} className="movlist">
