@@ -80,7 +80,7 @@ const StyleFooter = styled.footer`
   font-size:12px;
   padding-top:32px;
   section{
-    width:80%;
+    max-width : 1024px;
     margin:0 auto;
     .policy {
       margin-bottom: 14px;
