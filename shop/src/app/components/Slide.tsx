@@ -40,12 +40,14 @@ const Slide = (props: SlideProps) => {
 
   const nextMove = () => {
     setCurrSlide((prevSlide) => {
-      if (prevSlide < (data?.length || 0)) {
+      if (prevSlide < data.length) {
         return prevSlide + 1;
       }
-      return prevSlide;
+      // 슬라이드가 마지막에 도달하면 첫번째로 리셋
+      return 1;
     });
   };
+  
 
   const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
     console.log("mousedown", e.pageX);
