@@ -110,6 +110,7 @@ const StyleFooter = styled.footer`
       margin: 0 15px;
       display:flex;
       flex-direction:column;
+      
       a{
         padding:5px;
         margin:5px 0;
@@ -123,6 +124,7 @@ const StyleFooter = styled.footer`
     .footer_ul {
       visibility: hidden;
       height:0
+      /* background-color:#f5f5f7; */
     }
   }
   @media only screen and (min-width: 1700px) {

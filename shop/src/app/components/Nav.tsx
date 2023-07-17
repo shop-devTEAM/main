@@ -347,6 +347,7 @@ function Nav() {
 }
 
 const StyledNav = styled.nav`
+  background-color:blue;
     height:44px;
     font-size:12px;
     line-height:44px;

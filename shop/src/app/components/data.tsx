@@ -38,6 +38,22 @@ const noticeData: {
   {id:3, text:"apple의 UI정책과 무신사 쇼핑몰을 레퍼런스로 작업하였습니다."},
   {id:4, text:"고객친화적인 UIUX를 제공하는 쇼핑몰로 거듭나겠습니다."},
   {id:5, text:"방문해주셔서 감사합니다."},
-
 ]
-export {slideData, noticeData};
+const cardData: {
+  id: number;
+  title: string;
+  contents: string; 
+}[] = [
+  {id:0, title:"", contents:""},
+  {id:1, title:"제목", contents:"내용"},
+  {id:2, title:"제목", contents:"내용"},
+  {id:3, title:"제목", contents:"내용"},
+  {id:4, title:"제목", contents:"내용"},
+  {id:5, title:"제목", contents:"내용"},
+  {id:6, title:"제목", contents:"내용"},
+  {id:7, title:"제목", contents:"내용"},
+  {id:8, title:"제목", contents:"내용"},
+  {id:9, title:"제목", contents:"내용"},
+  {id:10, title:"제목", contents:"내용"},
+]
+export {slideData, noticeData, cardData};
