@@ -76,7 +76,7 @@ function Footer() {
 
 const StyleFooter = styled.footer`
   background-color:#f5f5f7;
-  width:100%;
+  width:100%; height:100vh;
   font-size:12px;
   padding-top:32px;
   section{
@@ -123,11 +123,11 @@ const StyleFooter = styled.footer`
     }
     .footer_ul {
       visibility: hidden;
-      height:0
-      /* background-color:#f5f5f7; */
+      height:0;
+      background-color:#f5f5f7;
     }
   }
-  @media only screen and (min-width: 1700px) {
+    @media only screen and (min-width: 1700px) {
     }
 
     @media only screen and (min-width: 1024px) {
@@ -141,6 +141,9 @@ const StyleFooter = styled.footer`
         margin: 0 auto;
         display:flex;
       }
+      .footer_ul {
+        background-color:#f5f5f7;
+    }
       .footer_ul>a {
         visibility: visible;
       }
@@ -149,9 +152,7 @@ const StyleFooter = styled.footer`
       }
   }
   
-@media only screen and (min-width: 900px) {  /* 핸드폰 디바이스를 위한 미디어 쿼리 */
-.footer_ul{
-      }
+  @media only screen and (min-width: 900px) {  /* 핸드폰 디바이스를 위한 미디어 쿼리 */
   }
   
 `
