@@ -43,17 +43,18 @@ const cardData: {
   id: number;
   title: string;
   contents: string; 
+  color:string;
 }[] = [
-  {id:0, title:"", contents:""},
-  {id:1, title:"제목", contents:"내용"},
-  {id:2, title:"제목", contents:"내용"},
-  {id:3, title:"제목", contents:"내용"},
-  {id:4, title:"제목", contents:"내용"},
-  {id:5, title:"제목", contents:"내용"},
-  {id:6, title:"제목", contents:"내용"},
-  {id:7, title:"제목", contents:"내용"},
-  {id:8, title:"제목", contents:"내용"},
-  {id:9, title:"제목", contents:"내용"},
-  {id:10, title:"제목", contents:"내용"},
+  {id:0, title:"", contents:"", color:""},
+  {id:1, title:"제목", contents:"내용 시작", color:"red" },
+  {id:2, title:"제목", contents:"내용", color:"red" },
+  {id:3, title:"제목", contents:"내용", color:"red" },
+  {id:4, title:"제목", contents:"내용", color:"red" },
+  {id:5, title:"제목", contents:"내용", color:"red" },
+  {id:6, title:"제목", contents:"내용", color:"red" },
+  {id:7, title:"제목", contents:"내용", color:"red" },
+  {id:8, title:"제목", contents:"내용", color:"red" },
+  {id:9, title:"제목", contents:"내용", color:"red" },
+  {id:10, title:"제목", contents:"내용 끝", color:"red"},
 ]
 export {slideData, noticeData, cardData};

@@ -1,4 +1,5 @@
 "use client"
+import { useState } from "react";
 import styled from "styled-components";
 
 interface CardProps {
@@ -6,17 +7,35 @@ interface CardProps {
     id:number;
     title:string;
     contents:string;
+    color:string;
   }[]
 }
 
 function Card(props:CardProps) {
   const {data} = props;
+
+  const [slideMove, setSildeMove] = useState(0);
+
+  function prevMove () {
+    if( slideMove < 0 ) setSildeMove(slideMove + 455 );
+  };
+
+  function nextMove () {
+    if( slideMove > -3000 ) setSildeMove(slideMove - 455 );
+  };
+
   return (
     <StyledCard>
       <p className="card_title">새로운 상품들을 만나보세요</p>
-      <div className="card_container">
+    <div /* 핑크 */ className="card_container"> 
           {data.map((item) => (
-              <div  className="card" key={item.id}>
+              <div //빨강
+               className="card"
+               key={item.id}
+               style={{ backgroundColor: item.color,
+                        transform: `translateX(${slideMove}px)`,
+                        transition: "0.5s ease"
+                     }}>
                 <h4>{item.title}</h4>
                 <p>{item.contents}</p>
               </div>
@@ -24,8 +43,8 @@ function Card(props:CardProps) {
           }
         </div>
         <div className="controller">
-          <span className="prev">&lang;</span>
-          <span className="next">&rang;</span>
+          <span className="prev" onClick={prevMove}>&lang;</span>
+          <span className="next" onClick={nextMove}>&rang;</span>
         </div>
     </StyledCard>
   );
@@ -42,7 +61,12 @@ const StyledCard = styled.div`
   .card_container{
     background-color:pink;
     display:flex;
-    width:288%;
+    width:300%;
+    overflow:scroll;
+  }
+  .card_container::-webkit-scrollbar {
+  width: 0; /* 스크롤바 너비를 0으로 설정 */
+  background-color: transparent; /* 스크롤바 배경색을 투명하게 설정 */
   }
   .card{
     width: 400px; height:500px;
@@ -72,6 +96,9 @@ const StyledCard = styled.div`
     .card_container{
       background-color:pink;
       width:1000%;
+      :first-child{
+        display:none;
+      }
     }
     .card {
       width:90%;
